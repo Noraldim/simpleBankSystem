@@ -1,0 +1,121 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+//98716308905 Noraldim Kamis
+//Visual Studio – C++ dilinde yazılmıştır.  
+// Dev C++ dilinde yazılmıştır. 
+
+int main()
+{
+    system("color B1");
+
+    int input, selct, opp, balanc, output;
+
+
+
+
+
+    balanc = 1000;
+    cout << "\n\n\n\t\t\t" << endl;
+    cout << "\t\t\t        BP BANKASINA HOSGELDINIZ " << endl;
+    cout << "\t\t\t----------------------------------" << endl;
+    cout << "\t\t\tlutfen sifrenizi giriniz :";
+    cin >> input;
+    system("cls");
+
+
+
+
+
+
+    if (input == 1234) {
+        cout << "\t\t\t\n\n\n\t\t\t" << endl;
+        cout << "\t\t\t        BP BANKASINA HOSGELDINIZ " << endl;
+        cout << "\t\t\t----------------------------------" << endl;
+        cout << "\t\t\tsifre dogru" << endl;
+        cout << "   \n                                         " << endl;
+        cout << "\t\t\tHangi islemi yapmak istiyorsunuz....: " << endl;
+
+        cout << "\t\t\t\n" << endl;
+        cout << "\t\t\t1- Bakiye ogrenme " << endl;
+        cout << "\t\t\t2- para cekme " << endl;
+        cout << "\t\t\t3- cikis" << endl;
+        cout << "   \n                                         " << endl;
+        cout << "\t\t\tlutfen bir islem seciniz :";
+        cin >> selct;
+        system("cls");
+
+
+        if (selct == 1) {
+            cout << "\t\t\t\n\n\n\t\t\t" << endl;
+            cout << "\t\t\t        BP BANKASINDA HOSGELDINIZ " << endl;
+            cout << "\t\t\t----------------------------------" << endl;
+            cout << "\t\t\tBakiyenizde " << balanc << "TL vardir";
+            cout << "\t\t\t\n\n" << endl;
+            
+
+        }
+        else if (selct == 2) {
+
+            cout << "\t\t\t\n\n\n\t\t\t" << endl;
+            cout << "\t\t\t        BP BANKASINDA HOSGELDINIZ " << endl;
+            cout << "\t\t\t----------------------------------" << endl;
+            cout << "\t\t\tLutfen cekmek istediginiz tutari giriniz :";
+            cin >> output;
+            if (output <= 1000) {
+
+                cout << "\t\t\tCekmek istediginis turar icin bakiyeniz YETERLIDIR\n";
+                cout << "                        KALAN BAKIYE :" << balanc - output;
+                cout << "\t\t\t\n\n" << endl;
+            }
+            else {
+                system("color 80");
+                cout << "\t\t\t     YETERSIZ BAKIYE";
+                cout << "\t\t\t\n\n" << endl;
+
+            }
+
+           
+
+
+        }
+        else if (selct == 3) {
+            system("color 80");
+            cout << "\t\t\t\n\n\n\t\t\t" << endl;
+            cout << "\t\t\t        BP BANKASINDA HOSGELDINIZ " << endl;
+            cout << "\t\t\t----------------------------------" << endl;
+            cout << "\t\t\tBASARILI BIR SEKILDE CIKIS YAPINIZ\n ";
+            cout << "\t\t\tYine bekleriz \n";
+            
+            
+
+        }
+        else {
+            system("color 80");
+            cout << "\t\t\t        BP BANKASINA HOSGELDINIZ " << endl;
+           cout << "\t\t\t----------------------------------\n\n" << endl;
+            cout << "                       Hatali secim !!! Lutfen 1 - 2 ya da 3 seciniz\n";
+            cout << "\t\t\t\n\n" << endl;
+        }
+
+
+    }
+
+    else {
+        system ("color 80");
+        cout << "\t\t\t\t\n\n\n\t\t\t " << endl;
+        cout << "\t\t\t        BP BANKASINA HOSGELDINIZ " << endl;
+        cout << "\t\t\t----------------------------------" << endl;
+        cout << "\t\t\t          HATALI SIFRE!!!" << endl;
+        cout << "\t\t\t           Yine Bekleriz" << endl;
+       
+        
+    }
+
+
+
+
+}
